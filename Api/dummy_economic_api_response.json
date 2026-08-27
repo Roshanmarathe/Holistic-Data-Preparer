@@ -1,0 +1,30 @@
+{
+  "source": "Dummy Economic Indicators API",
+  "description": "Mock external economic indicators for the assignment",
+  "data": [
+    {
+      "region": "North",
+      "unemployment_rate": 5.2,
+      "inflation_rate": 4.8,
+      "interest_rate": 6.5
+    },
+    {
+      "region": "South",
+      "unemployment_rate": 4.7,
+      "inflation_rate": 4.5,
+      "interest_rate": 6.5
+    },
+    {
+      "region": "East",
+      "unemployment_rate": 5.8,
+      "inflation_rate": 5.1,
+      "interest_rate": 6.5
+    },
+    {
+      "region": "West",
+      "unemployment_rate": 4.9,
+      "inflation_rate": 4.6,
+      "interest_rate": 6.5
+    }
+  ]
+}
