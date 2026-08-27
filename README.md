@@ -1,8 +1,7 @@
 <div align="center">
 
 <!-- Animated typing header -->
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=30&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=780&lines=Customer+Credit+Risk+%F0%9F%8F%A6;Data+Preprocessing+%2B+Feature+Engineering;End-to-End+ML-Ready+Pipeline;500+Records+%C3%97+34+Features+%E2%9C%85" alt="Typing SVG" />
-
+<img src="https://readme-typing-svg.demolab.com/?
 <br/>
 
 <!-- Badge row -->
