@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏦 [ADD-YOUR-PROJECT-NAME-HERE]
+# 🏦 [Holistic-Data-Preparer]
 ### Customer Credit Risk — End-to-End Data Preprocessing & Feature Engineering
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=Customer%20Credit%20Risk%20AI&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=End-to-End%20Data%20Preprocessing%20%26%20Feature%20Engineering%20Pipeline&descAlignY=55&descSize=18" width="100%"/>
@@ -676,23 +676,6 @@ The project successfully demonstrates a complete Data Preprocessing and Feature 
 <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
 
 <br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api?username=Roshan-Marathe&show_icons=true&theme=radical&hide_border=true&count_private=true" height="165" alt="GitHub Stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Roshan-Marathe&layout=compact&theme=radical&hide_border=true" height="165" alt="Top Languages"/>
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/Roshan-Marathe/Roshan-Marathe/output/github-snake.svg" alt="Contribution Snake Animation" width="100%"/>
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=Roshan-Marathe&style=for-the-badge&color=6C5CE7" alt="Profile Views"/>
-
-</div>
-
-> ⚙️ **Setup notes:** Swap every `Roshan-Marathe` above with your real GitHub username, add your actual LinkedIn/Twitter/Instagram/Email links, and set up the [contribution-snake GitHub Action](https://github.com/Platane/snk) on your profile repo so the animated snake renders. GitHub-stats and view-counter images are third-party services — double-check they load correctly after you push.
-
-<br/>
 
 ## ⭐ Support This Project
 
