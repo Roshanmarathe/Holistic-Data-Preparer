@@ -1,5 +1,8 @@
 <div align="center">
 
+# 🏦 [ADD-YOUR-PROJECT-NAME-HERE]
+### Customer Credit Risk — End-to-End Data Preprocessing & Feature Engineering
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=Customer%20Credit%20Risk%20AI&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=End-to-End%20Data%20Preprocessing%20%26%20Feature%20Engineering%20Pipeline&descAlignY=55&descSize=18" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2500&pause=900&color=00F7FF&center=true&vCenter=true&width=800&lines=Raw+Data+%E2%9E%9C+Cleaned+Data+%E2%9E%9C+ML-Ready+Dataset;500+Rows+%C3%97+15+Columns+%E2%9E%9C+500+Rows+%C3%97+27+Columns;Missing+Values%3A+0+%7C+Duplicates%3A+0+%7C+Target%3A+default_flag;Built+with+Pandas+%2B+NumPy+%2B+Scikit-learn" alt="Typing SVG" />
@@ -113,28 +116,45 @@ mindmap
 
 </div>
 
-### 🎬 Linear Workflow at a Glance
+### 🎬 Pipeline Flow — Step-by-Step (Vertical View)
 
 ```mermaid
-flowchart LR
-    A[📥 Data Acquisition] --> B[🔎 Data Understanding]
-    B --> C[🧹 Data Cleaning]
-    C --> D[🩹 Missing Value Treatment]
-    D --> E[📉 Outlier Handling]
-    E --> F[🔤 Encoding]
-    F --> G[📦 Binning & Binarization]
-    G --> H[📏 Feature Scaling]
-    H --> I[🔄 Transformations]
-    I --> J[🧩 Feature Construction]
-    J --> K[🛠️ ColumnTransformer]
-    K --> L[💾 Final ML-Ready Dataset]
+flowchart TD
+    A["📥 Data Acquisition<br/>CSV + JSON + SQL + API merged<br/>500 rows × 15 cols"] --> B["🔎 Data Understanding<br/>dtype audit • missing scan • target check<br/>500 × 15"]
+    B --> C["🧹 Data Cleaning<br/>Duplicate records removed<br/>500 × 15"]
+    C --> D["🩹 Missing Value Treatment<br/>income, credit_score, repayment history imputed<br/>Missing → 0"]
+    D --> E["📉 Outlier Handling<br/>Z-Score / IQR / Winsorization on income & loan_amount<br/>500 × 15"]
+    E --> F["🔤 Encoding<br/>join_date split +3 • region one-hot +3 • loan_purpose one-hot +2<br/>15 → 23 cols"]
+    F --> G["📦 Binning & Binarization<br/>income_bin +1 • high_credit_score +1<br/>23 → 25 cols"]
+    G --> H["📏 Feature Scaling<br/>Standardization / MinMax / Robust on numeric fields<br/>500 × 25"]
+    H --> I["🔄 Transformations<br/>Log / Box-Cox / Yeo-Johnson on skewed features<br/>500 × 25"]
+    I --> J["🧩 Feature Construction<br/>debt_to_income_ratio +1 • avg_monthly_transactions +1<br/>25 → 27 cols"]
+    J --> K["🛠️ ColumnTransformer<br/>Numeric + categorical pipelines unified<br/>500 × 27"]
+    K --> L["💾 Final ML-Ready Dataset<br/>0 missing • 0 duplicates • default_flag preserved<br/>✅ 500 × 27"]
 
     style A fill:#FF6B6B,color:#fff,stroke:#333,stroke-width:1px
-    style L fill:#00B894,color:#fff,stroke:#333,stroke-width:1px
     style E fill:#FDCB6E,color:#000
     style F fill:#74B9FF,color:#000
     style H fill:#A29BFE,color:#000
+    style L fill:#00B894,color:#fff,stroke:#333,stroke-width:1px
 ```
+
+### 📋 Stage-by-Stage Interpretation (This Dataset)
+
+| Stage | What Happens to *This* Dataset | Rows | Cols |
+|---|---|---|---|
+| 📥 Data Acquisition | CSV + JSON + SQL + Dummy API merged into one working dataframe | 500 | 15 |
+| 🔎 Data Understanding | dtype audit, missing-value scan, `default_flag` balance check | 500 | 15 |
+| 🧹 Data Cleaning | Duplicate customer records identified & removed | 500 | 15 |
+| 🩹 Missing Value Treatment | Nulls in `annual_income`, `credit_score`, `repayment_history` imputed (Mean/Median/KNN/MICE) | 500 | 15 |
+| 📉 Outlier Handling | Extreme values in `annual_income` & `loan_amount` treated (Z-Score/IQR/Winsorization) | 500 | 15 |
+| 🔤 Encoding | `join_date` split (+3), `region` one-hot (+3), `loan_purpose` one-hot (+2); `education_level`/`gender` encoded in place | 500 | **23** |
+| 📦 Binning & Binarization | `income_bin` and `high_credit_score` flags added | 500 | **25** |
+| 📏 Feature Scaling | Standardization/MinMax/Robust applied to numeric columns (no column change) | 500 | 25 |
+| 🔄 Transformations | Log/Box-Cox/Yeo-Johnson applied to skewed numeric features (no column change) | 500 | 25 |
+| 🧩 Feature Construction | `debt_to_income_ratio` & `avg_monthly_transactions` added | 500 | **27** |
+| 🛠️ ColumnTransformer | Numeric & categorical pipelines unified into one transformer | 500 | 27 |
+| 💾 Final Dataset | `Missing = 0`, `Duplicates = 0`, ML-ready | 500 | **27** |
 
 <br/>
 
@@ -632,17 +652,45 @@ The project successfully demonstrates a complete Data Preprocessing and Feature 
 
 <div align="center">
 
-### **Roshan Marathe**
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=2200&pause=800&color=FD79A8&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B+I'm+Roshan+Marathe;Data+Preprocessing+%7C+Feature+Engineering;Machine+Learning+Enthusiast;Turning+Raw+Data+Into+ML-Ready+Gold" alt="Typing SVG"/>
+
+<br/>
+
 *Data Preprocessing • Feature Engineering • Machine Learning*
+
+<br/>
 
 <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+<img src="https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/>
+<img src="https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+<img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
+<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=Roshan-Marathe&show_icons=true&theme=radical&hide_border=true&count_private=true" height="165" alt="GitHub Stats"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Roshan-Marathe&layout=compact&theme=radical&hide_border=true" height="165" alt="Top Languages"/>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/Roshan-Marathe/Roshan-Marathe/output/github-snake.svg" alt="Contribution Snake Animation" width="100%"/>
+
+<br/>
 
 <img src="https://komarev.com/ghpvc/?username=Roshan-Marathe&style=for-the-badge&color=6C5CE7" alt="Profile Views"/>
 
 </div>
 
-> ⚙️ Replace the GitHub/LinkedIn badge links above with your real profile URLs, and swap `Roshan-Marathe` in the view-counter with your actual GitHub username.
+> ⚙️ **Setup notes:** Swap every `Roshan-Marathe` above with your real GitHub username, add your actual LinkedIn/Twitter/Instagram/Email links, and set up the [contribution-snake GitHub Action](https://github.com/Platane/snk) on your profile repo so the animated snake renders. GitHub-stats and view-counter images are third-party services — double-check they load correctly after you push.
 
 <br/>
 
